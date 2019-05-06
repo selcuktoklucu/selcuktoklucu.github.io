@@ -1,4 +1,4 @@
-@import '~bootstrap/scss/bootstrap';
+/* @import '~bootstrap/scss/bootstrap'; */
 
 // body {
 // }
@@ -13,6 +13,12 @@ a {
 a:hover, a:focus {
   color: #89005d;
 }
+
+ABOUT ME
+SKILLS
+PROJECTS
+CONTACT
+Hi! This is Selcuk!
 
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
@@ -108,7 +114,7 @@ a:hover, a:focus {
 // navbar
 
 body {
-    background-image: url('/tools/bckgrnd.jpg');
+    background-image: url('https://i.imgur.com/sdb008T.jpg');
     // background-color: #00000080;
     background-size: cover;
     // opacity: 0.2;
