@@ -12,7 +12,7 @@ a:hover, a:focus {
 
 
 body {
-    background-image: url('file:///home/selcuk/GA/sei/project/selcuk-portfolio-temp/tools/bckgrnd.jpg');
+    background-image: url('../../tools/bckgrnd.jpg');
     // background-color: #00000080;
     background-size: cover;
     // opacity: 0.2;
