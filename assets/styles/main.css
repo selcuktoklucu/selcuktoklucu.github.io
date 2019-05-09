@@ -12,8 +12,24 @@ body {
   background-image: url('../../tools/bckgrnd.jpg');
   background-size: cover;
 }
-.page-container-body{
-  padding: 50px;
+.page-container-body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: url(../../tools/cloud.png);
+  background-size:cover;
+  animation: animate 60s linear infinite;
+
+}
+
+@keyframes animate {
+  0%{
+    background-position: 0px;
+  }
+  100%{
+    background-position: 5440px;
+  }
 }
 
 h1, h2, h3 {
@@ -62,6 +78,7 @@ img {
   background-color: rgba(0,0,0,.8);
 
 }
+
 #profilePic {
   max-width: 275px;
   border-radius: 50%;
