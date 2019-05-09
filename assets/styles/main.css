@@ -53,6 +53,7 @@ h1, h2, h3 {
 
 h3 {
   font-size:3em;
+  font-weight: 900;
 }
 
 .about-welcome {
@@ -86,11 +87,15 @@ img {
 }
 
 .skills-wrapper {
+  text-align: center;
   background-color: rgba(0,0,0,.8);
   border-radius: 50px;
   justify-content: center;
   padding: 20px;
   padding-top: 40px;
+}
+.skills-wrapper img{
+  width: 60%;
 }
 
 .skill-description {
@@ -99,7 +104,29 @@ img {
 
 .project_mylists{
   background-color: rgba(0,0,0,.7);
+  padding: 20px;
 }
+
+.projects img {
+  width: 70%;
+  text-align: center;
+  padding: 10px;
+}
+
+.project-description{
+  text-align: center;
+}
+.end-page{
+  background-color: rgba(0,0,0,.7);
+  height: 50vh;
+  /* width: 100%; */
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 @media (min-width: 578px) {
   p {
