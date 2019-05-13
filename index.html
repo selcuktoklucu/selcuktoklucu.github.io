@@ -4,12 +4,8 @@
       <title>Software-Engineer | Selcuk Toklucu</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
-      <script src="assets/scripts/index.js" type="text/javascript" charset="utf-8" defer></script>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <link href="assets/styles/main.css"rel="stylesheet" type="text/css">
     </head>
     <body class="container-fluid">
@@ -37,6 +33,21 @@
           </div>
         </div>
       </nav>
+      <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Features</a>
+            <a class="nav-item nav-link" href="#">Pricing</a>
+            <a class="nav-item nav-link disabled" href="#">Disabled</a>
+          </div>
+        </div>
+      </nav> -->
+      <!--  Nav BAR ENDS-->
       <div class="page-container-body">
       <div class="page-container-1 about-welcome">
           <div class='profilePicWrapper'>
@@ -48,14 +59,18 @@
           <h3> Greater Boston Area  </h3>
         </div>
       </div>
-    <div class="page-container-1 about-welcome about-intro">
+    <div class="page-container-1 about-welcome about-intro" id="about-intro">
       <div class="intro-text">
-        <p> the Universe is a big box of puzzle. </p>
-        <p>Human being tries to solve it. Engineering parts that puzzle into smaller parts </p>
-        <p> Tech is my passion. Design, Create and Use something. </p>
+        <!-- <p> the Universe is a big box of puzzle. </p> -->
+        <!-- <p>Human being tries to solve it. Engineering parts that puzzle into smaller parts </p> -->
+        <!-- <p> Tech is my passion. Design, Create and Use something. </p> -->
+        <p>I am a result-oriented software developer with a passion for engineering and science. </p>
+        <p>During my career in software development, I have created several user-friendly software solutions for business and life. </p>
+        <p>My Master’s in IT and General Assembly bootcamp program, combined with my background in science, cultivated more curiosity about how computers work and can improve the world.</p>
+        <p>I am seeking to contribute to a creative environment where the mission of ‘how can we do better’ is the mind set.</p>
       </div>
     </div>
-    <div class="skills-wrapper row">
+    <div class="skills-wrapper row" id="skills-wrapper">
       <p class="col-12">My featured skills</p>
       <p class="col-12"></p>
       <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-5">
@@ -121,9 +136,9 @@
             <img src="tools/comingsoon.jpg" alt='Coming Soon...' class="embed-responsive-item">
           </div>
         </div>
-        <div class="col-lg-1 order-last order-lg-first">
+        <div class="col-lg-1 col-md-6 order-last order-lg-first d-lg-block d-md-none d-sm-none">
           <div class="embed-responsive">
-            <img src="tools/128/mongodb.png" alt="MongoDb">
+            <img src="tools/128/mongodb.png" alt="MongoDb" class='hidden-lg-down'>
             <img src="tools/128/javascript.png" alt="JavaScript">
             <img src="tools/128/jquery.png" alt="jQuery">
             <img src="tools/html5.png" alt="html5">
@@ -144,7 +159,7 @@
           <p> My First full-stack project in General assembly, featured mainly with javascript and Ruby on Rails</p>
         </div>
         <div class="col-lg-1">
-          <div class="embed-responsive">
+          <div class="embed-responsive d-lg-block d-md-none d-sm-none">
             <img src="tools/128/ruby.png" alt="Ruby">
             <img src="tools/128/rails.png" alt="Rails">
             <img src="tools/128/javascript.png" alt="JavaScript">
@@ -168,7 +183,7 @@
           </div>
         </div>
         <div class="col-lg-1 order-last order-lg-first">
-          <div class="embed-responsive">
+          <div class="embed-responsive d-lg-block d-md-none d-sm-none">
             <img src="tools/128/javascript.png" alt="JavaScript">
             <img src="tools/128/jquery.png" alt="jQuery">
             <img src="tools/html5.png" alt="html5">
@@ -181,6 +196,48 @@
           <p> My First Single Page application in General assembly, featured mainly with javascript and jQuery</p>
       </div>
       </div>
+      <br>
+      <!--  Previous projects-->
+      <div class="project_mylists row">
+        <div class="project-description col-lg-4">
+          <h2> &lt;/&gt; Project Eat It!</h2>
+          <p> My First Mobile Application, which is created for a pizza ordering system for client. It includes the server side application as well! Concept covered for SNHU Mobile Application Class! Used Java, Firebase Authentication, Database and Storage on an Android Device!</p>
+        </div>
+        <div class="col-lg-1">
+          <div class="embed-responsive d-lg-block d-md-none d-sm-none">
+            <img src="tools/java.jpeg" alt="Java">
+            <img src="tools/firebase.png" alt="Firebase">
+            <img src="tools/android.png" alt="Android">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="embed-responsive embed-responsive-4by3">
+            <!-- <iframe src="https://www.youtube.com/watch?v=IK7bQTILIAM&t=11s" class="embed-responsive-item"></iframe> -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IK7bQTILIAM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <br>
+      <!--Previous projects  -->
+      <div class="project_mylists row">
+        <div class="col-lg-7 order-last order-lg-first">
+          <div class="embed-responsive embed-responsive-4by3">
+            <!-- <iframe src="https://www.youtube.com/watch?v=EQbnA_x6huU" class="embed-responsive-item"></iframe> -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EQbnA_x6huU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-lg-1 order-last order-lg-first">
+          <div class="embed-responsive d-lg-block d-md-none d-sm-none">
+            <img src="tools/csharp.png" alt="JavaScript">
+            <img src="tools/128/dotnet.png" alt="jQuery">
+            <img src="tools/128/msssql.png" alt="html5">
+          </div>
+        </div>
+        <div class="project-description col-lg-4">
+          <h3> &lt;/&gt; Pizza POS!</h3>
+          <p> My first programming experience with C#/.net framework. A Desktop Application simulates a pizza store's POS system. Featured with Ms-SQL server!</p>
+      </div>
+
     </div>
     <!-- <div class="page-container-1 about-welcome"> -->
         <!-- <div class='profilePicWrapper'>
@@ -192,8 +249,16 @@
         <a href="https://selcuktoklucu.github.io/">GitHub</a>
         <a href="https://www.linkedin.com/in/s--t/">LinkedIn</a>
         <a href="mailto: selcuktoklucu@gmail.com">Send Email</a>
+        <a href="tools/Selcuk_Toklucu_Resume.pdf">Resume</a>
       </div>
     <!-- </div> -->
   </div>
+  <script src="js/new-age.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="assets/scripts/index.js" type="text/javascript" charset="utf-8" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
+    <!-- Custom scripts for this template -->
+
 </html>
