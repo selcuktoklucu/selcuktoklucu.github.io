@@ -12,6 +12,7 @@ a:hover, a:focus {
 body {
   background-attachment: fixed;
   background-image: url('../../tools/bckgrnd.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
 }
 .page-container-body {
