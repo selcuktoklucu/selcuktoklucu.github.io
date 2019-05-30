@@ -1,4 +1,6 @@
-
+html {
+  scroll-behavior: smooth;
+}
 
 a {
   color: #bc0080;
@@ -7,6 +9,10 @@ a {
 
 a:hover, a:focus {
   color: #89005d;
+}
+
+.navbar-default {
+    background-color: #F8F8F820;
 }
 
 body {
@@ -76,7 +82,7 @@ h3{
 .about-welcome {
 
   height: 100vh;
-  margin-top: 20%;
+  margin-top: 0%;
   text-align: center;
   padding: 10%;
 }
@@ -159,7 +165,7 @@ img {
   text-align: center;
 }
 .projects{
-  margin: 0 12%;
+  margin: 0 3%;
   display: flex;
   flex-flow: column;
 }

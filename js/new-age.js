@@ -39,4 +39,8 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+
+  $(function () {
+
+});
 })(jQuery); // End of use strict
