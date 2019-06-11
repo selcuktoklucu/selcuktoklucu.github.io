@@ -6,6 +6,8 @@
 
       <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
       <link href="assets/styles/main.css"rel="stylesheet" type="text/css">
     </head>
     <body class="container-fluid" id="page-top">
@@ -28,12 +30,14 @@
       <div class="page-container-body">
         <nav class="navbar navbar-expand-lg navbar-default fixed-top" id="mainNav">
           <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">^</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
               Menu
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav ml-auto">
+                <li>
+                  <a class="navbar-brand js-scroll-trigger" href="#page-top">^</a>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link js-scroll-trigger" href="#about-intro">About Me</a>
                 </li>
@@ -72,6 +76,9 @@
         <p>During my career in software development, I have created several user-friendly software solutions for business and life. </p>
         <p>My Master’s in IT and General Assembly bootcamp program, combined with my background in science, cultivated more curiosity about how computers work and can improve the world.</p>
         <p>I am seeking to contribute to a creative environment where the mission of ‘how can we do better’ is the mind set.</p>
+        <form method="get" action="tools/Selcuk_Toklucu_Resume.pdf">
+          <button type="submit" class="btn btn-default"><i class="fa fa-download">Download Resume!</i> </button>
+        </form>
       </div>
     </div>
     <div class="skills-wrapper row" id="skills-wrapper">
@@ -79,7 +86,7 @@
       <p class="col-12"></p>
       <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-5">
         <img src="tools/128/react.png" alt="React">
-        <p class="skill-description">React</p>
+        <p class="skill-description">React.JS</p>
       </div>
       <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-5">
         <img src="tools/128/javascript.png" alt="JavaScript">
@@ -140,6 +147,32 @@
     </div>
     <br>
     <div class="projects" id="projects">
+      <!--  Project 4-->
+
+      <div class="project_mylists row">
+        <h3 class="col-12 text-center">My Software Projects</h3>
+        <div class="project-description col-lg-4">
+          <h2> &lt;/&gt; Simply Traffic!</h2>
+          <p> Capstone Project at General Assembly, Full Stack Application for displaying public areas and demonstrating nearby attractions and commuting information, i.e. live traffic data estimated ride fee with Uber. Checkout the <a href="https://github.com/selcuktoklucu/simply-traffic" target="_blank">GitHub Repo</a> for more details. <a href="https://selcuktoklucu.github.io/simply-traffic" target="_blank">Click here </a>to go the live site!</p>
+        </div>
+        <div class="col-lg-1">
+          <div class="embed-responsive d-lg-block d-md-none d-sm-none d-xs-none">
+            <img src="tools/128/react.png" alt="React">
+            <img src="tools/128/ruby.png" alt="Ruby">
+            <img src="tools/128/rails.png" alt="Rails">
+            <img src="tools/128/javascript.png" alt="JavaScript">
+            <img src="tools/128/sql.png" alt="PostgreSql">
+            <img src="tools/bootstrap.png" alt="bootstrap">
+
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe src="https://selcuktoklucu.github.io/simply-traffic/#/" class="embed-responsive-item"></iframe>
+          </div>
+        </div>
+      </div>
+      <br>
       <!--  Project 3-->
       <div class="project_mylists row">
         <div class="col-lg-7 order-last order-lg-first">
@@ -162,7 +195,7 @@
         </div>
         <div class="project-description col-lg-4">
           <h3> &lt;/&gt; PicBucket!</h3>
-          <p> SCRUM oriented group project at General Assembly. In this project, I developed back-end RESTful API, and front-end HTTP requests.
+          <p> Team project at General Assembly. In this project, I developed back-end RESTful API, and front-end HTTP requests.
              Checkout the <a href="https://github.com/pic-bucket/Pic-Bucket" target="_blank">GitHub Repo</a> for more details. <a href="https://pic-bucket.github.io/Pic-Bucket/" target="_blank">Click here </a>to toss your pictures to PicBucket!!!
           </p>
       </div>
@@ -244,7 +277,7 @@
         </div>
         <div class="col-lg-1 order-last order-lg-first">
           <div class="embed-responsive d-lg-block d-md-none d-sm-none">
-            <img src="tools/csharp.png" alt="JavaScript">
+            <img src="tools/128/csharp3.png" alt="JavaScript">
             <img src="tools/128/dotnet.png" alt="jQuery">
             <img src="tools/128/msssql.png" alt="html5">
           </div>
@@ -261,14 +294,20 @@
         </div> -->
         <br>
       <div class="end-page" id="end-page">
-        <h1> Hope to meet you soon! </h1>
-        <a href="https://selcuktoklucu.github.io/">GitHub</a>
-        <a href="https://www.linkedin.com/in/s--t/">LinkedIn</a>
-        <a href="mailto: selcuktoklucu@gmail.com">Send Email</a>
-        <a href="tools/Selcuk_Toklucu_Resume.pdf">Resume</a>
+        <h2> Hope to meet you soon! </h2>
+        <div class="row justify-content-center mx-auto">
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-5">
+            <a href="https://github.com/selcuktoklucu"><img class='contact-items' src="tools/github-sign.png" alt="html5"></a>
+            <a href="https://www.linkedin.com/in/s--t/"><img class='contact-items' src="tools/linkedin.png" alt="html5"></a>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-5">
+            <a href="mailto: selcuktoklucu@gmail.com"><img class='contact-items' src="tools/email.png" alt="html5"></a>
+            <a href="tools/Selcuk_Toklucu_Resume.pdf"><img class='contact-items' src="tools/curriculum.png" alt="html5"></a>
+          </div>
+        </div>
       </div>
-    </div>
   </div>
+</div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="js/new-age.min.js"></script>
   <script src="assets/scripts/index.js" type="text/javascript" charset="utf-8" defer></script>
