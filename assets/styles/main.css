@@ -36,7 +36,7 @@ h3{
 p {
   color: white;
   text-shadow: 0 0 10px #000;
-  font-size: 2vw;
+  font-size: 1vw;
 }
 .navbar-default {
     background-color: #F8F8F800;
@@ -84,7 +84,7 @@ p {
 .intro-text p {
   color: white;
   text-shadow: 0 0 10px #000;
-  font-size: 2vw;
+  font-size: 1vw;
 }
 
 .page-container-body {
