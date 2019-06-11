@@ -5,14 +5,15 @@ html {
 body {
   min-height: 100%;
   background-attachment: fixed;
-  background-image: url('../../tools/bckgrnd.jpg');
+  /* background-image: url('../../tools/bckgrnd.jpg'); */
+  background-image: url('../../tools/bckgrnd_50.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 links {
-  color: #bc0080;
+  color: #d0e0ed;
   transition: color .35s;
 }
 
@@ -41,14 +42,25 @@ p {
     background-color: #F8F8F800;
 }
 .navbar-default:hover {
-    background-color: #F8F8F830;
+    background-color: #F8F8F860;
     transition: all .4s ease;
     -webkit-transition: all .4s ease;
+}
+.navbar-toggler {
+  color: white;
+}
+.navbar-resume {
+  border-color: white;
+  border-style: solid;
+  border-width: thin;
 }
 
 #profilePic {
   max-width: 275px;
   border-radius: 50%;
+}
+.js-scroll-trigger {
+  color: white;
 }
 
 .about-welcome {
@@ -144,8 +156,8 @@ img {
   text-align: center;
 }
 .end-page{
-  background-color: rgba(0,0,0,.7);
-  height: 50vh;
+  background-color: rgba(0,0,0,.5);
+  height: 60vh;
   border-radius: 50px;
   box-sizing: border-box;
   display: flex;
@@ -213,6 +225,21 @@ img {
   #profilePic {
     max-width: 175px;
     border-radius: 50%;
+  }
+  .intro-text p {
+    font-size: 4vw;
+  }
+  .skills-wrapper p {
+    font-size: 5vw;
+  }
+  .projects p {
+    font-size: 4vw;
+  }
+  .btn-default{
+    font-size: 5vw;
+  }
+  .projects h2 {
+    font-size: 5vw;
   }
 }
 
