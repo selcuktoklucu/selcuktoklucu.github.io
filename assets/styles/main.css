@@ -264,6 +264,11 @@ p {
   .projects .project-skills{
     display: none
   }
+  .contact-items {
+    width: 60px;
+    height: auto;
+  }
+
 }
 
 /* Typewriter */
