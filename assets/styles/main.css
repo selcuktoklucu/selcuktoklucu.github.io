@@ -261,7 +261,7 @@ p {
 }
 
 @media screen and (max-width: 576px) {
-  .projects img{
+  .projects .project-skills{
     display: none
   }
 }
