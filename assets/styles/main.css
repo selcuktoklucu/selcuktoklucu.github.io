@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
 html {
   scroll-behavior: smooth;
 }
@@ -5,33 +7,32 @@ html {
 body {
   min-height: 100%;
   background-attachment: fixed;
-  /* background-image: url('../../tools/bckgrnd.jpg'); */
   background-image: url('../../tools/bckgrnd_50.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-links {
-  color: #d0e0ed;
+links,a {
+  color: #C0C000;
   transition: color .35s;
 }
 
-links:hover, links:focus {
-  color: #89005d;
+links:hover, links:focus,a:hover, a:focus {
+  color: #C04040;
 }
 
 h1, h2, h3 {
   color: white;
 }
 h1{
-  font-size: 6vw;
+  font-size: 4vw;
 }
 h2{
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 h3{
-  font-size: 3vw;
+  font-size: 2vw;
 }
 p {
   color: white;
@@ -39,7 +40,7 @@ p {
   font-size: 1vw;
 }
 .navbar-default {
-    background-color: #F8F8F800;
+    background-color: #F8F8F860;
 }
 .navbar-default:hover {
     background-color: #F8F8F860;
@@ -49,7 +50,7 @@ p {
 .navbar-toggler {
   color: white;
 }
-.navbar-resume {
+.active {
   border-color: white;
   border-style: solid;
   border-width: thin;
@@ -64,7 +65,6 @@ p {
 }
 
 .about-welcome {
-
   height: 100vh;
   margin-top: 0%;
   text-align: center;
@@ -72,6 +72,7 @@ p {
 }
 
 .wellcome-text {
+  font-family: Pasifico;
   background-color: rgba(0,0,0,.8);
   padding-top: 10px;
   padding-bottom: 20px;
@@ -84,38 +85,19 @@ p {
 .intro-text p {
   color: white;
   text-shadow: 0 0 10px #000;
-  font-size: 1vw;
+  font-size: 1.4vw;
 }
 
-.page-container-body {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: url(../../tools/cloud20.png);
-  background-size:cover;
-  animation: animate 20s linear infinite;
-}
-
-@keyframes animate {
-  0%{
-    background-position: 0px;
-  }
-  100%{
-    background-position: 1088px;
-  }
-}
 .intro-text {
-  background-color: rgba(0,0,0,.8);
+  background-color: rgba(0,0,0,.95);
   border-radius: 50px;
   padding: 0 10%;
   padding-top: 20px;
   padding-bottom: 20px;
 
 }
-
-img {
-  width: 100%;
+.sectionSkills {
+  height: 100vh;
 }
 
 .skills-wrapper {
@@ -141,23 +123,29 @@ img {
 }
 
 .project_mylists{
-  background-color: rgba(0,0,0,.7);
+  background-color: rgba(0,0,0,.95);
+  margin: 0 10%;
+  text-align: center;
   padding: 20px;
   border-radius: 50px;
 }
 
-.projects img {
-  width: 70%;
+.project-skills img {
+  width: 50%;
   text-align: center;
-  padding: 5%;
+}
+.project-image img {
+  border-radius: 10px;
+  width: 100%;
 }
 
 .project-description{
   text-align: center;
 }
 .end-page{
-  background-color: rgba(0,0,0,.5);
-  height: 60vh;
+  background-color: rgba(0,0,0,.45);
+  height: 40vh;
+  margin: 10% 10%;
   border-radius: 50px;
   box-sizing: border-box;
   display: flex;
@@ -165,6 +153,7 @@ img {
   justify-content: center;
   align-items: center;
 }
+
 .profilePicWrapper {
   display: inline-block;
   text-align: center;
@@ -177,7 +166,7 @@ img {
 
 .btn-default {
   font-family: Raleway-SemiBold;
-  font-size: 1vw;
+  font-size: 1.5vw;
   color: rgba(255, 255, 255, 0.75);
   letter-spacing: 1px;
   line-height: 45px;
@@ -191,6 +180,11 @@ img {
   color: #FFF;
   background: rgba(158, 108, 179, 0.75);
   border: 2px solid rgba(108, 89, 179, 0.75);
+}
+.contact-items {
+  width: 120px;
+  margin: 20px;
+  height: auto;
 }
 
 .contact-items:hover {
@@ -208,11 +202,34 @@ img {
   64%  { transform: scale(1, 1)      translateY(0); }
   100% { transform: scale(1, 1)      translateY(0); }
 }
+@media screen and (max-width: 1200px ) {
+  h2 {
+    font-size: 3.5vw;
+  }
+  .intro-text p {
+    font-size: 2vw;
+  }
+  .skills-wrapper p {
+    font-size: 2vw;
+  }
+  .projects p {
+    font-size: 2vw;
+  }
+  .btn-default{
+    font-size: 2vw;
+  }
+}
+
 
 @media screen and (max-width: 800px ) {
   #profilePic {
     max-width: 225px;
     border-radius: 50%;
+  }
+  .intro-text p {
+  color: white;
+  text-shadow: 0 0 10px #000;
+  font-size: 3vw;
   }
 }
 
@@ -246,5 +263,211 @@ img {
 @media screen and (max-width: 576px) {
   .projects img{
     display: none
+  }
+}
+
+/* Typewriter */
+#typewriter-section {
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+}
+
+#typewriter-section h1 {
+  margin: 0;
+}
+
+.typewriter {
+  font-size: 40px;
+  position: relative;
+}
+
+.typewriter::after {
+  content:'|';
+  display: block;
+  color: #fff;
+  animation: write 18s linear infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes write {
+  1% {
+    content:'S|';
+  }
+  2% {
+    content:'So|';
+  }
+  3% {
+    content:'Sof|';
+  }
+  4% {
+    content:'Soft|';
+  }
+  5% {
+    content:'Softw|';
+  }
+  6% {
+    content:'Softwa|';
+  }
+  7% {
+    content:'Softwar|';
+  }
+  8% {
+    content:'Software|';
+  }
+
+  14% {
+    content:'Software |';
+  }
+  14.5% {
+    content:'Software E|';
+  }
+  15% {
+    content:'Software En|';
+  }
+  15.5% {
+    content:'Software Eng|';
+  }
+  16% {
+    content:'Software Engi|';
+  }
+  16.5% {
+    content:'Software Engin|';
+  }
+  17% {
+    content:'Software Engine|';
+  }
+  17.5% {
+    content:'Software Enginee|';
+  }
+  18% {
+    content:'Software Engineer|';
+  }
+  40% {
+    content:'Software Enginee|';
+  }
+  41% {
+    content:'Software Engine|';
+  }
+  42% {
+    content:'Software Engin|';
+  }
+  43% {
+    content:'Software Engi|';
+  }
+  44% {
+    content:'Software Eng|';
+  }
+  46% {
+    content:'Software En|';
+  }
+  48% {
+    content:'Software E|';
+  }
+  50% {
+    content:'Software|';
+  }
+  51% {
+    content:'Softwar|';
+  }
+  52% {
+    content:'Softwa|';
+  }
+  53% {
+    content:'Softw|';
+  }
+  54% {
+    content:'Soft|';
+  }
+  55% {
+    content:'Sof|';
+  }
+  56% {
+    content:'So|';
+  }
+  57% {
+    content:'S|';
+  }
+  58% {
+    content:'|';
+  }
+  59% {
+    content:'F|';
+  }
+  60% {
+    content:'Fu|';
+  }
+  61% {
+    content:'Ful|';
+  }
+  62% {
+    content:'Full |';
+  }
+  63% {
+    content:'Full S|';
+  }
+  64% {
+    content:'Full St|';
+  }
+  65% {
+    content:'Full Sta|';
+  }
+  66% {
+    content:'Full Stac|';
+  }
+  67% {
+    content:'Full Stack|';
+  }
+  68% {
+    content:'Full Stack W|';
+  }
+  69% {
+    content:'Full Stack We|';
+  }
+  70% {
+    content:'Full Stack Web|';
+  }
+  71% {
+    content:'Full Stack Web D|';
+  }
+  72% {
+    content:'Full Stack Web De|';
+  }
+  73% {
+    content:'Full Stack Web De|';
+  }
+  74% {
+    content:'Full Stack Web Dev|';
+    opacity: 1;
+  }
+  74.5% {
+    content:'Full Stack Web Deve|';
+    opacity: 1;
+  }
+  75% {
+    content:'Full Stack Web Devel|';
+    opacity: 1;
+  }
+  75.5% {
+    content:'Full Stack Web Develo|';
+    opacity: 1;
+  }
+  76% {
+    content:'Full Stack Web Develop|';
+    opacity: 1;
+  }
+  76.5% {
+    content:'Full Stack Web Develope|';
+    opacity: 1;
+  }
+  77% {
+    content:'Full Stack Web Developer|';
+    opacity: 1;
+  }
+  100% {
+    content:'Full Stack Web Developer.';
+    opacity: 0.5;
   }
 }

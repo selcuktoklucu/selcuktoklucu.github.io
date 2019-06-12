@@ -5,8 +5,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
       <link href="assets/styles/main.css"rel="stylesheet" type="text/css">
     </head>
@@ -20,9 +20,6 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav ml-auto">
-                <li>
-                  <a class="navbar-brand js-scroll-trigger" href="#page-top">^</a>
-                </li>
                 <li class="nav-item">
                   <a class="nav-link js-scroll-trigger" href="#about-intro">About Me</a>
                 </li>
@@ -33,41 +30,40 @@
                   <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger navbar-resume" href="tools/Selcuk_Toklucu_Resume.pdf">Resume</a>
+                  <a class="nav-link js-scroll-trigger" href="tools/Selcuk_Toklucu_Resume.pdf">Resume</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#end-page">Contact</a>
+                  <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
-      <div class="page-container-1 about-welcome">
+      <section class="page-container-1 about-welcome">
           <div class='profilePicWrapper'>
             <img id='profilePic' src="tools/cut.jpg" alt="Selcuk">
           </div>
-        <div class="wellcome-text">
-          <h1> Hi! This is Selcuk!  </h1>
-          <h2> Software Engineer & Web Developer  </h2>
+        <div class="wellcome-text" id="typewriter-section">
+          <h1> Hi! I'm Selcuk!  </h1>
+          <!-- <h2> Software Engineer & Web Developer  </h2> -->
           <h3> Greater Boston Area  </h3>
+          <div class="typewriter"></div>
         </div>
-      </div>
-    <div class="page-container-1 about-welcome about-intro" id="about-intro">
+      </section>
+    <section class="page-container-1 about-welcome about-intro" id="about-intro">
       <div class="intro-text">
-        <!-- <p> the Universe is a big box of puzzle. </p> -->
-        <!-- <p>Human being tries to solve it. Engineering parts that puzzle into smaller parts </p> -->
-        <!-- <p> Tech is my passion. Design, Create and Use something. </p> -->
         <p>I am a result-oriented software developer with a passion for engineering and science. </p>
         <p>During my career in software development, I have created several user-friendly software solutions for business and life. </p>
         <p>My Master’s in IT and General Assembly bootcamp program, combined with my background in science, cultivated more curiosity about how computers work and can improve the world.</p>
         <p>I am seeking to contribute to a creative environment where the mission of ‘how can we do better’ is the mind set.</p>
-        <form method="get" action="tools/Selcuk_Toklucu_Resume.pdf">
+        <form method="get" action="tools/Selcuk_Toklucu_Resume.pdf" target="_blank">
           <button type="submit" class="btn btn-default"><i class="fa fa-download">Resume</i> </button>
         </form>
       </div>
-    </div>
-    <div class="skills-wrapper row" id="skills-wrapper">
-      <p class="col-12">My featured skills</p>
+    </section>
+    <section class="sectionSkills" id="skills-wrapper">
+      <div class="skills-wrapper row" >
+      <h2 class="col-12">My featured skills</h2>
       <p class="col-12"></p>
       <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-5">
         <img src="tools/128/react.png" alt="React">
@@ -130,17 +126,22 @@
         <p class="skill-description">CSS</p>
       </div>
     </div>
+    </section>
     <br>
-    <div class="projects" id="projects">
+    <section class="projects" id="projects">
       <!--  Project 4-->
 
       <div class="project_mylists row">
         <h2 class="col-12 text-center">My Software Projects</h2>
-        <div class="project-description col-lg-4">
+        <div class="project-description col-lg-7">
+          <br>
           <h2> &lt;/&gt; Simply Traffic!</h2>
-          <p> Capstone Project at General Assembly, Full Stack Application for displaying public areas and demonstrating nearby attractions and commuting information, i.e. live traffic data estimated ride fee with Uber. Checkout the <a href="https://github.com/selcuktoklucu/simply-traffic" target="_blank">GitHub Repo</a> for more details. <a href="https://selcuktoklucu.github.io/simply-traffic" target="_blank">Click here </a>to go the live site!</p>
+          <br>
+          <p> Capstone Project at General Assembly, Full Stack Application for displaying public areas and demonstrating nearby attractions and commuting information, i.e. live traffic data estimated ride fee with Uber.</p>
+          <p>Checkout the <a href="https://github.com/selcuktoklucu/simply-traffic" target="_blank">GitHub Repo</a> for more details. <a href="https://selcuktoklucu.github.io/simply-traffic" target="_blank">Click here </a>to go the live site!</p>
+          <p>Featured with: React.Js, Ruby on Rails, JSX, PostgreSql and Bootstrap</p>
         </div>
-        <div class="col-lg-1">
+        <div class="col-lg-1 project-skills">
           <div class="embed-responsive d-lg-block d-md-none d-sm-none d-xs-none">
             <img src="tools/128/react.png" alt="React">
             <img src="tools/128/ruby.png" alt="Ruby">
@@ -150,23 +151,20 @@
             <img src="tools/bootstrap.png" alt="bootstrap">
           </div>
         </div>
-        <div class="col-lg-7">
-          <div class="embed-responsive embed-responsive-4by3">
-            <iframe src="https://selcuktoklucu.github.io/simply-traffic/#/" class="embed-responsive-item"></iframe>
+        <div class="col-lg-4 project-image">
+          <div class="img-front">
+            <img src="tools/ss/simply-traffic.png" alt="simply-traffic">
           </div>
         </div>
       </div>
       <br>
       <!--  Project 3-->
       <div class="project_mylists row">
-        <div class="col-lg-7 order-last order-lg-first">
-          <div class="embed-responsive embed-responsive-4by3">
-            <iframe src="https://pic-bucket.github.io/Pic-Bucket/" class="embed-responsive-item"></iframe>
-            <!-- <img src="tools/comingsoon.jpg" alt='Coming Soon...' class="embed-responsive-item"> -->
-          </div>
+        <div class="col-lg-4 order-last order-lg-first project-image">
+          <img src="tools/ss/picbucket.png" alt="projectpicbucket">
         </div>
         <div class="col-lg-1 col-md-6 order-last order-lg-first d-sm-none d-lg-block d-md-none ">
-          <div class="embed-responsive">
+          <div class="embed-responsive project-skills">
             <img src="tools/128/expressjslogo.png" alt="MongoDb" class='hidden-lg-down'>
             <img src="tools/128/nodeJs.png" alt="MongoDb" class='hidden-lg-down'>
             <img src="tools/128/javascript.png" alt="JavaScript">
@@ -174,25 +172,30 @@
             <img src="tools/128/jquery.png" alt="jQuery">
             <img src="tools/html5.png" alt="html5">
             <img src="tools/bootstrap.png" alt="bootstrap">
-            <img src="tools/css3.png" alt="css">
           </div>
         </div>
-        <div class="project-description col-lg-4">
+        <div class="project-description col-lg-7">
+          <br>
           <h2> &lt;/&gt; PicBucket!</h2>
-          <p> Team project at General Assembly. In this project, I developed back-end RESTful API, and front-end HTTP requests.
-             Checkout the <a href="https://github.com/pic-bucket/Pic-Bucket" target="_blank">GitHub Repo</a> for more details. <a href="https://pic-bucket.github.io/Pic-Bucket/" target="_blank">Click here </a>to toss your pictures to PicBucket!!!
+          <br>
+          <p> Team project at General Assembly. In this project, I developed back-end RESTful API, and front-end HTTP requests.</p>
+             <p>Checkout the <a href="https://github.com/pic-bucket/Pic-Bucket" target="_blank">GitHub Repo</a> for more details. <a href="https://pic-bucket.github.io/Pic-Bucket/" target="_blank">Click here </a>to toss your pictures to PicBucket!!!
+             <p>Featured with: Express.js, Node.jS, MongoDB, jQuery, Bootstrap and HTML5</p>
           </p>
       </div>
       </div>
       <br>
       <!--  Project 2-->
       <div class="project_mylists row">
-        <div class="project-description col-lg-4">
+        <div class="project-description col-lg-7">
+          <br>
           <h2> &lt;/&gt; My tasklists!</h2>
+          <br>
           <p> My First full-stack project in General assembly, featured mainly with javascript and Ruby on Rails. Checkout the <a href="https://github.com/selcuktoklucu/my-job-list-front-end" target="_blank">GitHub Repo</a> for more details. <a href="https://selcuktoklucu.github.io/my-job-list-front-end/" target="_blank">Click here </a>to go live site!</p>
+          <p>Featured with: Ruby on Rails, JavaScript, PostgreSql, jQuery and Bootstrap</p>
         </div>
         <div class="col-lg-1">
-          <div class="embed-responsive d-lg-block d-md-none d-sm-none d-xs-none">
+          <div class="embed-responsive d-lg-block d-md-none d-sm-none d-xs-none project-skills">
             <img src="tools/128/ruby.png" alt="Ruby">
             <img src="tools/128/rails.png" alt="Rails">
             <img src="tools/128/javascript.png" alt="JavaScript">
@@ -202,93 +205,103 @@
 
           </div>
         </div>
-        <div class="col-lg-7">
-          <div class="embed-responsive embed-responsive-4by3">
-            <iframe src="https://selcuktoklucu.github.io/my-job-list-front-end/" class="embed-responsive-item"></iframe>
-          </div>
+        <div class="col-lg-4 project-image">
+          <!-- <div class="embed-responsive embed-responsive-4by3"> -->
+            <img src="tools/ss/mylists.png" alt="mylists">
+            <!-- <iframe src="https://selcuktoklucu.github.io/my-job-list-front-end/" class="embed-responsive-item"></iframe> -->
+          <!-- </div> -->
         </div>
       </div>
       <br>
+      <!-- Pizza POS  -->
       <div class="project_mylists row">
-        <div class="col-lg-7 order-last order-lg-first">
-          <div class="embed-responsive embed-responsive-4by3">
-            <iframe src="https://selcuktoklucu.github.io/tic-tac-toe/" class="embed-responsive-item"></iframe>
-          </div>
-        </div>
-        <div class="col-lg-1 order-last order-lg-first">
-          <div class="embed-responsive d-lg-block d-md-none d-sm-none">
-            <img src="tools/128/javascript.png" alt="JavaScript">
-            <img src="tools/128/jquery.png" alt="jQuery">
-            <img src="tools/html5.png" alt="html5">
-            <img src="tools/bootstrap.png" alt="bootstrap">
-            <img src="tools/css3.png" alt="css">
-          </div>
-        </div>
-        <div class="project-description col-lg-4">
-          <h2> &lt;/&gt; Tic Tac Toe!</h2>
-          <p> My First Single Page application in General assembly, featured mainly with javascript and jQuery</p>
-      </div>
-      </div>
-      <br>
-      <!--  Previous projects-->
-      <div class="project_mylists row">
-        <div class="project-description col-lg-4">
-          <h2> &lt;/&gt; Project Eat It!</h2>
-          <p> My First Mobile Application, which is created for a pizza ordering system for client. It includes the server side application as well! Concept covered for SNHU Mobile Application Class! Used Java, Firebase Authentication, Database and Storage on an Android Device!</p>
-        </div>
-        <div class="col-lg-1">
-          <div class="embed-responsive d-lg-block d-md-none d-sm-none">
-            <img src="tools/java.jpeg" alt="Java">
-            <img src="tools/firebase.png" alt="Firebase">
-            <img src="tools/android.png" alt="Android">
-          </div>
-        </div>
-        <div class="col-lg-7">
-          <div class="embed-responsive embed-responsive-4by3">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/IK7bQTILIAM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-      <br>
-      <!--Previous projects  -->
-      <div class="project_mylists row">
-        <div class="col-lg-7 order-last order-lg-first">
+        <div class="col-lg-4 order-last order-lg-first">
           <div class="embed-responsive embed-responsive-4by3">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/EQbnA_x6huU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
         <div class="col-lg-1 order-last order-lg-first">
-          <div class="embed-responsive d-lg-block d-md-none d-sm-none">
+          <div class="embed-responsive d-lg-block d-md-none d-sm-none project-skills">
             <img src="tools/128/csharp3.png" alt="JavaScript">
             <img src="tools/128/dotnet.png" alt="jQuery">
             <img src="tools/128/msssql.png" alt="html5">
           </div>
         </div>
-        <div class="project-description col-lg-4">
+        <div class="project-description col-lg-7">
+          <br>
           <h2> &lt;/&gt; Pizza POS!</h2>
-          <p> My first programming experience with C#/.net framework. A Desktop Application simulates a pizza store's POS system. Featured with Ms-SQL server!</p>
+          <br>
+          <p> My first programming experience with C#/.net framework. A Desktop Application simulates a pizza store's POS system. </p>
+          <p>After all I learned, I can say, I could do the same with 1/3 lines of code :).</p>
+          <p>Checkout <a href="https://www.youtube.com/embed/EQbnA_x6huU" target="_blank">the demo</a> on YouTube</p>
+          <p>Featured with C#/.net and MS-SQL server!</p>
       </div>
-
     </div>
-    <!-- <div class="page-container-1 about-welcome"> -->
-        <!-- <div class='profilePicWrapper'>
-          <img id='profilePic' src="tools/cut.jpg" alt="Selcuk">
-        </div> -->
+    <br>
+      <!--  project eat it-->
+    <div class="project_mylists row">
+      <div class="project-description col-lg-7">
         <br>
-      <div class="end-page" id="end-page">
-        <h2> Hope to meet you soon! </h2>
-        <div class="row justify-content-center mx-auto">
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-5">
-            <a href="https://github.com/selcuktoklucu"><img class='contact-items' src="tools/github-sign.png" alt="html5"></a>
-            <a href="https://www.linkedin.com/in/s--t/"><img class='contact-items' src="tools/linkedin.png" alt="html5"></a>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-5">
-            <a href="mailto: selcuktoklucu@gmail.com"><img class='contact-items' src="tools/email.png" alt="html5"></a>
-            <a href="tools/Selcuk_Toklucu_Resume.pdf"><img class='contact-items' src="tools/curriculum.png" alt="html5"></a>
-          </div>
+        <h2> &lt;/&gt; Project Eat It!</h2>
+        <br>
+        <p> My First Mobile Application, which is created for a pizza ordering system for client. It includes the server side application as well! Concept covered for SNHU Mobile Application Class! </p>
+        <p>Checkout <a href="https://www.youtube.com/embed/IK7bQTILIAM" target="_blank">the demo</a> on YouTube</p>
+        <p>Used Java, Firebase Authentication, Database and Storage on an Android Device!</p>
+      </div>
+      <div class="col-lg-1">
+        <div class="embed-responsive d-lg-block d-md-none d-sm-none project-skills">
+          <img src="tools/java.jpeg" alt="Java">
+          <img src="tools/firebase.png" alt="Firebase">
+          <img src="tools/android.png" alt="Android">
         </div>
       </div>
-  </div>
+      <div class="col-lg-4">
+        <div class="embed-responsive embed-responsive-4by3">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/IK7bQTILIAM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <br>
+      <!--Previous projects  -->
+      <!--  Tic Tac Toe-->
+    <div class="project_mylists row">
+      <div class="col-lg-4 order-last order-lg-first project-image">
+        <!-- <div class="embed-responsive embed-responsive-4by3"> -->
+          <!-- <iframe src="https://selcuktoklucu.github.io/tic-tac-toe/" class="embed-responsive-item"></iframe> -->
+          <img src="tools/ss/tictactoe.png" alt="mylists">
+        <!-- </div> -->
+      </div>
+      <div class="col-lg-1 order-last order-lg-first">
+        <div class="embed-responsive d-lg-block d-md-none d-sm-none project-skills">
+          <img src="tools/128/javascript.png" alt="JavaScript">
+          <img src="tools/128/jquery.png" alt="jQuery">
+          <img src="tools/html5.png" alt="html5">
+          <img src="tools/bootstrap.png" alt="bootstrap">
+          <img src="tools/css3.png" alt="css">
+        </div>
+      </div>
+      <div class="project-description col-lg-7">
+        <br>
+        <h2> &lt;/&gt; Tic Tac Toe!</h2>
+        <br>
+        <p> My First Single Page Application at General assembly. </p>
+        <p>Checkout the <a href="https://github.com/selcuktoklucu/tic-tac-toe" target="_blank">GitHub Repo</a> for more details. <a href="https://selcuktoklucu.github.io/tic-tac-toe/" target="_blank">Click here </a>to go live site!</p>
+        <p>Featured mainly with JavaScript and jQuery!</p>
+    </div>
+    </div>
+        <br>
+  </section>
+  <section id="contact">
+    <div class="end-page">
+      <h2> Hope to meet you soon! </h2>
+      <div class="row justify-content-center mx-auto">
+        <a href="https://github.com/selcuktoklucu" target="_blank"><img class='contact-items' src="tools/github-sign.png" alt="html5"></a>
+        <a href="https://www.linkedin.com/in/s--t/" target="_blank"><img class='contact-items' src="tools/linkedin.png" alt="html5"></a>
+        <a href="mailto: selcuktoklucu@gmail.com" target="_blank"><img class='contact-items' src="tools/email.png" alt="html5"></a>
+        <a href="tools/Selcuk_Toklucu_Resume.pdf" target="_blank"><img class='contact-items' src="tools/curriculum.png" alt="html5"></a>
+      </div>
+    </div>
+  </section>
 </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="js/new-age.min.js"></script>
