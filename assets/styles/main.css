@@ -40,10 +40,10 @@ p {
   font-size: 1vw;
 }
 .navbar-default {
-    background-color: #F8F8F860;
+    background-color: #000;
 }
 .navbar-default:hover {
-    background-color: #F8F8F860;
+    background-color: #000;
     transition: all .4s ease;
     -webkit-transition: all .4s ease;
 }
