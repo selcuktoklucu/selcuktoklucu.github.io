@@ -134,11 +134,29 @@ p {
   width: 50%;
   text-align: center;
 }
-.project-image img {
+
+.img-vertical {
+height: 300px
+}
+
+
+.project-description img{
+  width: 5%;
+  border-radius: 50px;
+}
+.project-image img:not(.img-vertical-img) {
   border-radius: 10px;
   width: 100%;
 }
-
+.img-vertical-img{
+  width: 150px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.imgRadius {
+  border-radius: 30px;
+  width: 100%;
+}
 .project-description{
   text-align: center;
 }
@@ -162,6 +180,32 @@ p {
   border-radius: 50%;
   background-color: rgba(0,0,0,.8);
 
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #00000090;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+.project-image:hover .overlay {
+  width: 100%;
+  left: 0;
+}
+.newImg {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
 }
 
 .btn-default {
@@ -193,6 +237,8 @@ p {
   animation-name: bounceIcon;
   animation-timing-function: cubic-bezier(.3, .85, .4, 1);
 }
+
+
 @keyframes bounceIcon {
   0%   { transform: scale(1, 1)      translateY(0); }
   10%  { transform: scale(1.1, .9)   translateY(0); }
